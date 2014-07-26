@@ -1,0 +1,70 @@
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+
+/* ### Logo ################################################################# */
+#logo {
+	position:absolute;
+	top:10px;
+	right:10px;
+	border: 1px solid #37444f;
+	background-image: url(redaxo_logo_klein.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+#logo a {
+	display:block;
+	height:80px;
+	width:186px;
+	text-indent:-700em;
+}
+
+/* ### Header ############################################################### */
+
+#header {
+	background:#37444f url(bg_header.gif) 210px 0 no-repeat;
+	color: #c4c4c4;
+}
+
+#nav-header {
+	position:absolute;
+	left:210px;
+	bottom:18px;
+}
+
+/* ### Teaser ############################################################### */
+
+#main-teaser {
+	background:url(main_teaser.jpg) no-repeat;
+}
+
+/* ### Main-block Background ################################################# */
+
+#main-block {
+	background-image: url(linie_main_block.gif);
+	background-position: 627px 0;
+	background-repeat: repeat-y;
+	background-color: #465762;
+	padding-bottom: 40px;
+}
+
+/* ### Donate ###################################################################### */
+
+#donate {
+	display:block;
+	clear:left;
+	width:208px;
+	height: 300px;
+	background: #37444f url(bg_unav.gif) no-repeat;
+	color: #c4c4c4;
+	text-align:right;
+}
+
+#donate input {
+	margin-top: 200px;
+	margin-right: 20px;
+}

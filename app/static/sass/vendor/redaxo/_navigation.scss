@@ -1,0 +1,147 @@
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+
+
+
+/* ### Sub Navigation ######################################################### */
+
+#nav {
+	display:block;
+	float:left;
+	width:208px;
+	background:url(../../files/bg_nav.gif) repeat-y;
+}
+
+#nav p.copy,
+#nav p {
+	padding-right:20px;
+	color:#fff;
+	background: inherit;
+	text-align: right;
+}
+
+
+#nav p.copy a {
+	color: #fff;
+	background: inherit;
+	text-decoration: none;
+}
+
+#nav p.copy a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+#nav {
+	min-height: 193px;
+}
+* html body #nav { height: 193px; } /* IE 6 / 5.5 Hack */
+
+#nav ul.rex-navi1 { padding:10px 20px;  }
+
+
+/* ### nav1st - first level navigation ######################################## */
+
+ul.rex-navi1 {
+	padding:0px 20px;
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+
+ul.rex-navi1 li {
+	display: block;
+	padding:3px 0;
+	color:#37444f;
+	font-weight:bold;
+	text-align: right;
+}
+
+ul.rex-navi1 a {
+	display: block;
+	color:#37444f;
+	padding: 1px 0;
+}
+
+ul.rex-navi1 a:hover, 
+ul.rex-navi1 li a.rex-active, 
+ul.rex-navi1 li a.rex-current {
+	color:#fff;
+	padding: 1px 0;
+}
+
+
+
+/* ### nav2nd - second level navigation ######################################### */
+
+ul.rex-navi2 {
+	margin: 0 0 10px 0;
+	font-size:1em;
+	font-weight:normal;
+	text-transform:none;
+}
+
+ul.rex-navi2 li {
+	padding:0;
+	margin:0;
+	font-weight:normal;
+	border:none;
+	text-align: right;
+}
+
+ul.rex-navi2 a, 
+ul.rex-navi2 a:hover, 
+ul.rex-navi2 li a.rex-active, 
+ul.rex-navi2 li a.rex-current {
+	display:block;
+	padding:4px 17px 4px 10px;
+	background-image:url(../../files/button.gif);
+	background-position:158px 8px;
+	background-repeat: no-repeat;
+}
+
+
+ul.rex-navi2 a:hover, 
+ul.rex-navi2 li a.rex-active, 
+ul.rex-navi2 li a.rex-current {
+	background-position:158px -12px;
+	background-color:#c4d4dc;
+	color:#37444f;
+}
+
+ul.rex-navi2 li a.rex-active, 
+ul.rex-navi2 li a.rex-current {
+	background-position:158px -32px;
+}
+
+
+#breadcrumb {
+  margin-bottom: 20px;
+}
+#main-block #breadcrumb p, 
+#main-block #breadcrumb ul, 
+#main-block #breadcrumb li {
+  display: inline;
+  color: #90B0BF;
+  font-size: 1em;
+}
+#main-block ul.rex-breadcrumb li {
+  margin-left: 0px;
+  padding: 0 6px 0 13px;
+  background-image: url(../../files/raquo.gif);
+  background-position: 0px 4px;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+#main-block ul.rex-breadcrumb li.rex-lvl1 {
+  margin: 0;
+  padding-left: 5px;
+  background: none;
+}

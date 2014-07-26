@@ -1,0 +1,69 @@
+# addon:metaform en_gb
+
+media = Media
+categories = Categories
+articles = Articles
+
+minfo_metainfos_not_found = No metainfo found
+
+minfo_field_list_caption = field list
+
+minfo_field_fieldset = edit/create field
+minfo_field_label_prefix = prefix
+minfo_field_label_title = field title
+minfo_field_label_name = label name
+minfo_field_label_function = function
+minfo_field_label_id = ID
+minfo_field_label_type = field type
+minfo_field_label_attributes = field attribute
+minfo_field_label_default = default value
+minfo_field_label_nullable = mandatory field
+minfo_field_label_params = parameter
+minfo_field_label_prior = field position
+minfo_field_label_restrictions = Only available in the following categories
+minfo_field_label_no_restrictions = Available in all categories
+
+minfo_field_notice_title = prefix "translate:" translates the value via I18N
+
+minfo_field_first_prior = at the beginning
+minfo_field_after_prior = after the field "{0}"
+
+minfo_field_params_notice_3 = example:<br />a) all|user|admin<br />b) 1:all|2:user|3:admin<br />c) SELECT label,id FROM my_table WHERE a=4<br />d) (DB2) SELECT label,id FROM my_table WHERE a=4
+minfo_field_params_notice_4 = example:<br />a) all|user|admin<br />b) 1:all|2:user|3:admin<br />c) SELECT label,id FROM my_table WHERE a=4<br />d) (DB2) SELECT label,id FROM my_table WHERE a=4
+minfo_field_params_notice_5 = example:<br />a) all|user|admin<br />b) 1:all|2:user|3:admin<br />c) SELECT label,id FROM my_table WHERE a=4<br />d) (DB2) SELECT label,id FROM my_table WHERE a=4
+minfo_field_params_notice_6 = example:<br /> category=1 types="gif,jpg" preview=1
+minfo_field_params_notice_7 = example:<br /> category=1 types="gif,jpg" preview=1
+minfo_field_params_notice_8 = example:<br /> category=1
+minfo_field_params_notice_9 = example:<br /> category=1
+
+minfo_field_attributes_notice = example:<br /> style=color:red multiple=multiple class=my_css_class perm=admin[]
+
+minfo_field_error_name = Please enter the column name!
+minfo_field_error_unique_name = This column name already exists!
+minfo_field_error_unique_type = This type name already exists!
+minfo_field_error_chars_name = This columnname contains unallowed characters (Allowed characters are A-Z, 0-9 and _)!
+minfo_field_error_invalid_prefix = This prefix is not valid!
+minfo_field_error_invalid_type = This type is not valid!
+minfo_field_error_invalid_length = This field length is not valid!
+minfo_field_error_invalid_name = This column name is not valid!
+minfo_field_error_invalid_fieldid = This field ID is not valid!
+minfo_field_error_invalid_typeid = This type ID is not valid!
+minfo_field_error_deleted = Field has not been deleted!
+minfo_field_successfull_deleted = Field has been successfully deleted!
+minfo_field_successfull_saved = Field has been successfully saved!
+
+minfo_edit_metadata = edit metainfo
+
+minfo_media_in_use_art = Article (metadata)
+minfo_media_in_use_cat = Categories (metadata)
+minfo_media_in_use_med = Media (metadata)
+
+# bc: labels aus dem core
+online_from = Online from
+online_to = to
+description = Description
+keywords = Keywords
+header_article_type = Article type
+metadata_image = Metafile/Image
+teaser = Teaser
+pool_file_copyright = Copyright

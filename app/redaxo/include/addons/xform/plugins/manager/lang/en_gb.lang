@@ -1,0 +1,142 @@
+xform_table_manager = Table Manager
+
+navigation_manager = Tables
+
+
+# xform manager
+alltables = all tables
+back_to_overview = back to overview
+updatetable = update table/s
+tablesupdated = table/s got updatet
+
+xform_help_empty = empty entries can be searched with (empty)
+xform_help_multipleselect = multiple select with pushed down CTRL/CMD key
+updatetable_with_delete = with field deletion
+updatetable_with_delete_confirm = Really update with field delete ?
+
+xform_relation_move_first_data = put selected data set at the beginning
+xform_relation_move_up_data = put selected data set to top
+xform_relation_move_down_data = put selected data set to bottom
+xform_relation_move_last_data = put selected data set at the end
+xform_relation_choose_entry = select data set
+xform_relation_delete_entry = delete selected data set
+xform_relation_first_create_data = please create this data first
+xform_relation_edit_relations = edit relations
+
+truncate_table = delete data
+table_truncated = data completely deleted
+table_not_found = table not found
+truncate_table_confirm = Really delete ALL data sets of the table?
+xform_table_overview = table overview
+
+xform_manager_edit_table = edit table
+xform_manager_add_table = add table
+
+add_row = add row
+
+# tables.inc.php
+importcsv = import csv file
+tbl_active = active
+tbl_inactive = not active
+
+xform_tbl_active = active
+xform_tbl_inactive = not active
+
+xform_manager_table_updated = Thank you for the update.
+xform_manager_table_entry_saved = Thank you for the edit.
+xform_manager_table_enter_name = Please fill in the table name
+xform_manager_table_enter_specialchars = Please fill in only letters and numbers for the table name. First char must be a letter
+xform_manager_table_exists = This table name already exists
+
+xform_manager_table_prio = priority
+xform_manager_table_name = name
+xform_manager_name = description
+xform_manager_table_description = description
+xform_manager_entries_per_page = dataset per page
+xform_manager_search_active = search active
+xform_manager_enter_number = Please define a amount of displayed entries per page.
+xform_manager_table_hide = hidden in navigation
+xform_manager_table_allow_export = allow export of data
+xform_manager_table_allow_import = allow import of data
+
+xform_manager_table_updated = Thank you for the update.
+xform_manager_table_added = Thank you for the entry.
+xform_manager_table_deleted = table got deleted
+xform_manager_table_add = create table
+xform_manager_table_update = update table and fields
+xform_manager_table_import = import table
+
+
+# edit.inc.php
+thankyouforupdate = Thank you for the update.
+thankyouforentry = Thank you for entry.
+editdata = edit data
+adddata = create data set
+searchtext = search term
+searchfields = table fields that are getting searched through
+add = add
+edit = edit
+save = save
+delete = delete
+search = search
+export = export
+import = data import
+datadeleted = data set deleted
+openerinfo = opener info
+
+xform_table_info = info
+xform_dataset = dataset
+
+dataset_delete = delete dataset
+dataset_deleted = dataset has been deleted
+dataset_delete_confirm = Really delete dataset?
+
+
+# field.inc.php
+tablenotexists = This table does not exist!
+tablefield = table field
+values = values
+validates = valdidation
+actios = actions
+validatenamenotempty = Please fill in the name
+validatenamepregmatch = Please fill in only letters and "_" as name
+validatenamecheck = This name already exists
+donotsaveindb = do not save in database
+hideinlist = hide in list
+useassearchfieldalidatenamenotempty = add as search field
+tablefielddeleted = table field deleted
+tablefieldnotfound = table field not found
+addtablefield = create table field
+table = table
+editfield = edit field
+choosenadd = select fields
+choosenadd_description = Please select the field which you want to use for your administration. There are value field which are usually used for entries as also validate fields which validate value fields on certain criteria.
+addfield = add field
+editfields = edit fields
+
+
+xform_id_is_missing = ID missing
+xform_id_missing_info = [en] Die Tabelle hat leider kein ID Feld mit autoincrement. Somit kann XFORM nicht damit arbeiten. Bitte aktualisieren Sie die Tabelle und legen notfalls die ID manuell an.
+
+# import
+xform_manager_import_error_missingfile = [en] Bitte laden Sie eine Importdatei hoch
+xform_manager_import_error_missingfields = [en] Es fehlen folgende Felder: {0}
+xform_manager_import_error_field = [en] Feld "{0}" konnte nicht angelegt werden: "{1}"
+xform_manager_import_field_added = [en] Feld "{0}" wurde angelegt
+xform_manager_import_error_import_stopped = [en] Import wurde abgebrochen, da Fehler aufgetaucht sind.
+xform_manager_import_error_dataimport = [en] Datensatz konnte nicht importiert werden: {0}
+xform_manager_import_error_dataimport = [en] Es wurden {0} Datensätze importiert. Davon waren {1} neue Datensätze und {2} Datensätze wurden ersetzt.
+xform_manager_import_info_data_imported = [en] Es wurde/n {0} Datensätze nicht importiert.
+xform_manager_import_error_not_started = [en] Import wurde nicht gestartet.
+xform_manager_import_csv = [en] CSV Datei importieren
+xform_manager_import_csv_info = [en] Hiermit können Sie Daten in diese Tabelle importieren. BItte beachten Sie, dass Sie nur Textdateien importieren können und in der ersten Zeile die Felddefinitionen vorhanden sein müssen
+xform_manager_import_if_no_column = [en] Wenn Spalte in der Datenbank nicht vorhanden ist,
+xform_manager_import_if_no_column_ignore = [en] dann Spalte ignorieren.
+xform_manager_import_if_no_column_addtext = [en] dann Spalte als TEXT in der Datenbank anlegen (Zur Verwaltung müssen später diese Felder noch bestimmt werden).
+xform_manager_import_if_no_column_break = [en] dann Import abbrechen.
+xform_manager_import_divider = [en] Trennzeichen
+xform_manager_import_divider_semicolon = [en] Semikolon
+xform_manager_import_divider_comma = [en] Komma
+xform_manager_import_divider_tab = [en] Tabulator
+xform_manager_import_unique_field = [en] Wenn dieses Feld identisch ist, dann wird der Datensatz ersetzt
+xform_manager_import_start = [en] Hinzufügen

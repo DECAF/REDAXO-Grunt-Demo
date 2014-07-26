@@ -1,0 +1,45 @@
+/*
+	media queries mixin
+	usage:
+
+	.foo {
+	  float: left;
+	  width: 250px;
+	  @include media($PHONE-ONLY) { width: 100% ;}
+	  @include media($TABLET) { width: 125px; }
+	  @include media($DESKTOP) { float: none; }
+	}
+*/
+
+$SIZE-TABLET       : 640px;
+$SIZE-DESKTOP      : 1020px;
+
+$PHONE-ONLY        : 'phone-only';
+$TABLET            : 'tablet';
+$TABLET-ONLY       : 'tablet-only';
+$PHONE-TABLET-ONLY : 'phone-tablet-only';
+$DESKTOP           : 'desktop';
+$PRINT             : 'print';
+
+@mixin media($media) {
+  @if $media == $PHONE-ONLY {
+    @media (max-width: $SIZE-TABLET - 1) { @content; }
+  }
+  @else if $media == $TABLET-ONLY {
+    @media (min-width: $SIZE-TABLET) and (max-width: $SIZE-DESKTOP - 1) { @content; }
+  }
+  @else if $media == $PHONE-TABLET-ONLY {
+    @media (max-width: $SIZE-DESKTOP - 1) { @content; }
+  }
+  @else if $media == $TABLET {
+    @media (min-width: $SIZE-TABLET) { @content; }
+  }
+  @else if $media == $DESKTOP {
+    @media (min-width: $SIZE-DESKTOP) { @content; }
+  }
+  @else if $media == $PRINT {
+    @media print { @content; }
+  }
+}
+
+

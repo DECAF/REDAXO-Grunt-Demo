@@ -1,0 +1,22 @@
+body.DEBUG::after {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #000000;
+  background: rgba(255,255,255,0.5);
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 2000;
+
+  @include media($PHONE-ONLY) {
+    content: 'phone';
+  }
+  @include media($TABLET) {
+    content: 'tablet';
+  }
+  @include media($DESKTOP) {
+    content: 'desktop';
+  }
+}

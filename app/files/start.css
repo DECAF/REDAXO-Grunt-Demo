@@ -1,0 +1,63 @@
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+
+/* ### Logo ################################################################# */
+#logo {
+	display: none;
+}
+
+/* ### Header ############################################################### */
+#header {
+	background:#37444f url(start_bg_header.gif) 210px 0 no-repeat;
+	color: #c4c4c4;
+}
+
+#nav-header {
+	position:absolute;
+	left:339px;
+	top:30px;
+}
+
+/* ### Teaser ############################################################### */
+
+#main-teaser {
+	background-image: url(start_teaser.jpg);
+	background-repeat: no-repeat;
+}
+
+/* ### Start-block Background ################################################# */
+
+#main-block {
+	background-image: url(linie_start_block.gif);
+	background-position: 317px 217px;
+	background-repeat: no-repeat;
+	background-color: #37444f;
+	min-height: 580px;
+}
+
+* html body #main-block { height: 580px; } /* IE 6 / 5.5 Hack */
+
+/* ### main-block => MainContent ################################################### */
+
+#main-content-block {
+	padding-right:180px;
+}
+
+/* ### Donate ###################################################################### */
+
+#donate {
+	position: absolute;
+	right: 15px;
+	display:block;
+	clear:left;
+	width:120px;
+	height: 400px;
+}
+
+#donate input {
+	margin-top: 300px;
+}

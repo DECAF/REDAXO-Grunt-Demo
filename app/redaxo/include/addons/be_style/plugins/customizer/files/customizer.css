@@ -1,0 +1,35 @@
+
+h1.be-style-customizer-title {
+    position: absolute;
+    top: 32px;
+    left: 202px;
+    width: 420px;
+    overflow: hidden;
+    color: #2C8EC0;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+h1.be-style-customizer-title.be-style-customizer-small {
+    font-size: 13px;
+}
+
+#rex-page-module.be-style-customizer-textarea-big #rex-wrapper textarea,
+#rex-page-template.be-style-customizer-textarea-big #rex-wrapper textarea {
+  margin-left: 5px;
+  width: 98%;
+  margin-bottom: 20px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+
+.CodeMirror {
+    min-height: 330px;
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 12px;
+    line-height: 16px !important;
+}

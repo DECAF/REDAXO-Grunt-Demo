@@ -1,0 +1,23 @@
+# addon: userinfo en_gb
+userinfo_component_userinfo = {0}, on {1}
+userinfo_component_stats_title = page stats
+
+userinfo_component_stats_actions = actions
+userinfo_component_stats_categories = categories
+userinfo_component_stats_articles = articles
+userinfo_component_stats_clangs = languages
+userinfo_component_stats_date = date
+userinfo_component_stats_modules = modules
+userinfo_component_stats_slices = slices
+userinfo_component_stats_templates = templates
+userinfo_component_stats_user = user
+userinfo_component_stats_users = users
+
+userinfo_component_articles_title = last modified articles
+userinfo_component_articles_caption = list of articles modified last
+userinfo_component_articles_summary = list of articles modified last
+
+userinfo_component_media_title = last modified media
+
+userinfo_block_stats = stats
+userinfo_block_latest_infos = modified last

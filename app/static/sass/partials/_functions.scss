@@ -1,0 +1,3 @@
+@function hover-color($color) {
+	@return scale-color($color, $lightness: -15%, $saturation: 40%);
+}

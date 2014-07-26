@@ -1,0 +1,32 @@
+@include retina-sprite-add(assets, "sprites/assets/*.png", "sprites/assets2x/*.png");
+
+
+.an-asset {
+  display : inline-block;
+}
+
+.assets-logo {
+  @include retina-sprite(logo);
+}
+
+.assets-arrow-right {
+  @extend .an-asset;
+  @include retina-sprite(arrow-right, $hover : true);
+}
+
+.assets-arrow-left {
+  @extend .an-asset;
+  @include retina-sprite(arrow-left, $hover : true);
+}
+
+.animated-ajax-loader {
+  @extend .an-asset;
+  background : transparent url(/images/animated/ajax-loader.gif) no-repeat center;
+  height     : 16px;
+  width      : 16px;
+}
+
+.btn-close {
+  @extend .an-asset;
+  @include retina-sprite(btn-close);
+}

@@ -1,0 +1,180 @@
+/*********************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+**********************************************************************************/
+
+
+/* ### undo #################################################################### */
+
+:link,:visited { text-decoration:none; }
+ul,ol { list-style:none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; font-weight:normal; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input, dl, dt, dd { margin:0; padding:0 }
+img, a img,:link img,:visited img, fieldset { border:none }
+img { margin:0; padding:0; vertical-align:bottom; }
+address { font-style:normal }
+
+table {	border:none; padding:0px; margin:0px; border-spacing:0px; font-size:1em;}
+tr { border:none; padding:0px; margin:0px; }
+td { border:none; padding:0px; margin:0px; vertical-align:top; border-spacing:0px; }
+
+
+legend { display:none; }
+
+div, p, li, a {background-repeat:no-repeat; }
+
+/* ### reset some basic style ################################################### */
+
+dl			{margin: 0 0 0 0;}
+dl dt		{margin: 0 0 0 0;}
+dl dd+dt	{margin-top: 0;}
+dl dd		{margin: 0 0 0 0;}
+
+ol			{list-style: none;}
+ol li		{margin: 0 0 0 0;}
+ol li ol	{margin: 0 0 0 0;}
+ol li ul	{margin: 0 0 0 0;}
+
+p			{margin-bottom: 0em;}
+
+ul			{list-style: none;}
+ul li		{margin: 0 0 0 0;}
+ul li ul	{margin: 0 0 0 0; list-style: none;}
+ul li ol	{margin: 0 0 0 0;}
+
+pre			{font-size:1.2em; }
+
+a:hover { text-decoration:none; }
+
+/* ### HTML ###################################################################### */
+html {
+	min-height: 99%;
+	margin-bottom: 1px;
+}
+
+/* ### BODY ###################################################################### */
+body {
+	background:#37444F;
+	color: #fff;
+	font-family:"Lucida Grande", verdana, arial, helvetica, sans-serif;
+	font-size: x-small;
+	}
+
+/* \*/ * html body { text-align:center; font-size: xx-small; } /* *//* IE 5.5 Hack */
+
+.clearer {
+	display:block;
+	clear:both;
+	line-height:0;
+	height:1px;
+	font-size:0;
+	visibility:hidden;
+}
+
+.clear {
+	clear:both;
+}
+
+.floatLeft { float:left; }
+.floatRight { float:right; }
+
+.warning { color:#f00; background: inherit; }
+
+/* ### Website Content ############################################################ */
+#site-content {
+	position:relative;
+	display:block;
+	margin:0 auto;
+	padding:0;
+	height:100%;
+	width:840px;
+}
+
+/* ### Header ##################################################################### */
+
+#header {
+	position:relative;
+	margin:0;
+	padding:0;
+	height:140px;
+}
+
+/* ### Logo ####################################################################### */
+
+
+
+/* ### Teaser ##################################################################### */
+
+#main-teaser {
+	text-indent:-700em;
+	height: 220px;
+}
+
+/* ### Content #################################################################### */
+
+
+#content {
+	display:block;
+	clear:both;
+	position:relative;
+	padding:0 0 0 0;
+}
+
+
+/* hide from IE/MAC \*/
+* html #content, * html #main-content {
+	height:1px;
+}
+/* end hide */
+
+
+#main-content {}
+
+#main {
+	float:right;
+	width:630px;
+}
+
+
+/* ### main-block => MainContent ################################################### */
+
+#main-block {
+	float:left;
+	width:630px;
+	color: #fff;
+}
+
+
+#main-content-block {
+	padding:20px;
+	display:block;
+}
+
+
+/* ### Footer ###################################################################### */
+
+#footer {
+	display:block;
+	width:100%;
+}
+
+#footer p {
+	padding: 20px 0;
+	color:#c4c4c4;
+	background:inherit;
+}
+
+#footer p a,
+#footer p a:link {
+	color:#c4c4c4;
+	text-decoration: underline;
+	background:inherit;
+}
+
+#footer p a:hover {
+	color:#c4c4c4;
+	text-decoration: none;
+	background:inherit;
+}

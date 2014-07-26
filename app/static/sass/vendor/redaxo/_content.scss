@@ -1,0 +1,287 @@
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+
+
+#site-content {
+	color:#fff;
+	text-align:left;
+	background: inherit;
+}
+
+/* ### breadcrump ############################################################ */
+
+#main-block p#breadcrumb {
+font-size: 1em;
+color: #90B0BF;
+margin-bottom: 30px;
+}
+
+
+/* ### headlines ############################################################ */
+
+#main-block h1 {
+	color:#fff;
+	background: inherit;
+	font-size:1.6em;
+	font-weight:normal;
+	line-height:1.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+#main-block h2 {
+	color:#90B0BF;
+	background: inherit;
+	font-size:1.4em;
+	font-weight:bold;
+	line-height:1.6em;
+}
+
+#main-block h3 {
+	color:#90B0BF;
+	background: inherit;
+	font-size:1.2em;
+	font-weight:bold;
+	line-height:1.4em;
+}
+
+#main-block h4 {
+	color:#c4c4c4;
+	background: inherit;
+	font-size:1.1em;
+	font-weight:bold;
+	line-height:1.2em;
+}
+
+#main-block h5 {
+	color:#c4c4c4;
+	background: inherit;
+	font-size:1.0em;
+	font-weight:bold;
+	line-height:1.0em;
+}
+
+#main-block h6 {
+	background: inherit;
+	color:#c4c4c4;
+	font-size:0.9em;
+	font-weight:bold;
+	line-height:1.0em;
+}
+
+
+/* ### Images ############################################################ */
+
+#main-block img {
+	display:block;
+	margin:4px 0;
+}
+
+#main-block img.floatLeft {
+	float:left;
+	margin:4px 10px 4px 0;
+}
+
+#main-block img.floatRight {
+	float:right;
+	margin:4px 0 4px 10px;
+}
+
+
+
+/* ### Hyperlinks ######################################################### */
+
+#main-block a, 
+#main-block a:link {
+	color:#90B0BF;
+	text-decoration:underline;
+}
+
+#main-block a:hover {
+	color:#90B0BF;
+	text-decoration: none;
+}
+
+#main-block a.faq, 
+#main-block a.faq:link {
+	color:#eee;
+	font-size:1.4em;
+	text-decoration:none;
+	text-transform:none;
+	line-height: 2.0em;
+}
+
+#main-block a.faq:hover {
+	color:#90B0BF;
+	text-decoration:underline;
+}
+
+
+/* ### Paragraphs ########################################################## */
+
+#main-block p {
+	margin-bottom:1.6em;
+	font-size:1.2em;
+	line-height:1.6em;
+}
+
+#nav p {
+	margin-bottom:1.2em;
+}
+
+
+
+/* ### Tables ############################################################## */
+
+#main-block table {
+	font-size:1.2em;
+	line-height:1.6em;
+}
+
+#main-block td {
+	padding:0 0 0 0;
+}
+
+
+/* ### Blockquotes ########################################################## */
+
+#main-block blockquote {
+	margin:0 0 0 20px;
+}
+
+
+/* ### Lists ################################################################ */
+
+#main-block ul, 
+#main-block ol {
+	margin-bottom:1.2em;
+	font-size:1.2em;
+	line-height:1.6em;
+}
+
+#main-block ol li {
+	margin:0 0 0 30px;
+	list-style-type:decimal-leading-zero;
+} 
+#main-block ul li {
+	margin:0 0 0 20px;
+	list-style-type:square;
+}
+
+
+/* ### Module ################################################################ */
+
+#main-content-block div.floatLeft img {
+	float:left;
+	margin:4px 40px 4px 0;
+}
+
+#main-content-block div.floatRight img {
+	float:right;
+	margin:4px 0 4px 40px;
+}
+/*
+#main-content-block a.more {
+	clear:left;
+	position: relative;
+	left: 120px;
+}
+*/
+
+/* ### Team ### */
+
+#main-content-block div.txt-img {
+	clear: both;
+	padding: 12px 0;
+}
+
+
+/* ### Team ### */
+
+#main-content-block div.team {
+	clear: both;
+	padding: 12px 0;
+	margin-bottom: 0px ;
+}
+
+#main-content-block div.team div{
+	width:100px;
+}
+
+#main-content-block div.team p {
+	font-size: 1.3em;
+	letter-spacing: 0.05em;
+	margin-top: 0px;
+}
+
+#main-content-block div.team div.floatLeft img {
+	margin:4px 0px 4px 0;
+}
+
+/* ### Bildgalerie ### */
+
+#main-content-block div.galerie {
+	clear: both;
+}
+#main-content-block div.galerie div.image {
+	float: left;
+	width: 270px;
+}
+
+#main-content-block div.galerie div.image img{
+	padding: 5px;
+	border:1px solid #aaa;
+}
+
+
+/* ### Formular ################################################################ */
+
+label.text{
+	width: 80px;
+	height: 25px;
+	display:block;
+	float:left;
+	clear: left;
+	padding-top:5px;
+}
+
+label.textarea{
+	width: 80px;
+	height: 25px;
+	display:block;
+	clear: left;
+	padding-top:5px;
+}
+input.text {
+	float:left;
+	width: 370px;
+	height:20px;
+	background-color: #eee;
+	color:#000;
+	border-left: 6px solid #90b0bf;;
+	border-bottom: 1px solid #FFF;
+	border-right: 6px solid #90b0bf;;
+	border-top: 1px solid #FFF;
+}
+
+textarea.textarea {
+	width: 450px;
+	height:100px;
+	background-color: #eee;
+	color:#000;
+	border-left: 6px solid #90b0bf;;
+	border-bottom: 1px solid #FFF;
+	border-right: 6px solid #90b0bf;;
+	border-top: 1px solid #FFF;
+}
+
+.submit{
+	background-color: #90b0bf;
+	color:#fff;
+	margin-top: 10px;
+	border: none;
+}

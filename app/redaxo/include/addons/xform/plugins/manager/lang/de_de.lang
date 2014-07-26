@@ -1,0 +1,142 @@
+xform_table_manager = Table Manager
+
+navigation_manager = Tabellen
+
+
+# xform manager
+alltables = Alle Tabellen
+back_to_overview = Zurück zur Übersicht
+updatetable = Tabelle/n aktualisieren
+tablesupdated = Tabelle/n wurde/n aktualisiert
+
+xform_help_empty = Leereinträge können mit <br />"(empty)" gesucht werden
+xform_help_multipleselect = Mehrfachauswahl mit gedrückter CTRL/CMD Taste
+updatetable_with_delete = mit Feldlöschung
+updatetable_with_delete_confirm = Wirklich aktualisieren mit Feldlöschung ?
+
+xform_relation_move_first_data = Ausgewählten Datensatz an den Anfang verschieben
+xform_relation_move_up_data = Ausgewählten Datensatz nach oben verschieben
+xform_relation_move_down_data = Ausgewählten Datensatz nach unten verschieben
+xform_relation_move_last_data = Ausgewählten Datensatz an das Ende verschieben
+xform_relation_choose_entry = Datensatz auswählen
+xform_relation_delete_entry = Ausgewählten Datensatz löschen
+xform_relation_first_create_data = Bitte zunächst diesen Datensatz erstellen
+xform_relation_edit_relations = Verknüpfungen verwalten
+
+truncate_table = Tabelle leeren
+table_truncated = Tabelle wurde geleert
+table_not_found = Die Tabelle wurde nicht gefunden
+truncate_table_confirm = Wirklich die komplette Tabelle leeren?
+xform_table_overview = Tabellenübersicht
+
+xform_manager_edit_table = Tabelle editieren
+xform_manager_add_table = Tabelle hinzufügen
+
+add_row = Reihe hinzufügen
+
+# tables.inc.php
+importcsv = CSV Importieren
+tbl_active = aktiv
+tbl_inactive = inaktiv
+
+xform_tbl_active = aktiv
+xform_tbl_inactive = inaktiv
+
+xform_manager_table_updated = Tabelle und Felder wurden erstellt und/oder aktualisiert
+xform_manager_table_entry_saved = Vielen Dank fuer die Eintragung
+xform_manager_table_enter_name = Bitte tragen Sie die Tabellenbezeichnung ein
+xform_manager_table_enter_specialchars = Bitte tragen Sie beim Tabellenname nur Buchstaben und Zahlen ein. Die erste Ziffer muss ein Buchstabe sein
+xform_manager_table_exists = Dieser Tabellenname ist bereits vorhanden
+
+xform_manager_table_prio = Priorität
+xform_manager_table_name = Name
+xform_manager_name = Bezeichnung
+xform_manager_table_description = Beschreibung
+xform_manager_entries_per_page = Datensätze pro Seite
+xform_manager_search_active = Suche aktiv
+xform_manager_enter_number = Bitte geben Sie eine Zahl für die Datensätze pro Seite ein
+xform_manager_table_hide = In Navigation versteckt
+xform_manager_table_allow_export = Export der Daten erlauben
+xform_manager_table_allow_import = Import von Daten erlauben
+
+xform_manager_table_updated = Vielen Dank für die Aktualisierung.
+xform_manager_table_added = Vielen Dank für den Eintrag.
+xform_manager_table_deleted = Tabelle wurde gelöscht
+xform_manager_table_add = Tabelle anlegen
+xform_manager_table_update = Tabellen und Felder updaten
+xform_manager_table_import = Tabelle importieren
+
+
+# edit.inc.php
+thankyouforupdate = Vielen Dank für die Aktualisierung.
+thankyouforentry = Vielen Dank für den Eintrag.
+editdata = Daten editieren
+adddata = Datensatz anlegen
+searchtext = Suchbegriff
+searchfields = Tabellenfelder über die gesucht wird
+add = hinzufügen
+edit = editieren
+save = speichern
+delete = löschen
+search = suchen
+export = exportieren
+import = Import
+datadeleted = Datensatz wurde gelöscht
+openerinfo = Opener-Info
+
+xform_table_info = Info
+xform_dataset = Datenergebnis
+
+dataset_delete = Datenergebnis löschen
+dataset_deleted = Datenergebnis wurde geleert
+dataset_delete_confirm = Wirklich das Datenergebnis leeren?
+
+
+# field.inc.php
+tablenotexists = Diese Tabelle existiert nicht!
+tablefield = Tabellenfeld
+values = Werte
+validates = Validierung/Überprüfung
+actios = Aktionen
+validatenamenotempty = Bitte tragen Sie den Namen ein
+validatenamepregmatch = Bitte tragen Sie beim Namen nur Buchstaben und "_" ein
+validatenamecheck = Dieser Name ist bereits vorhanden
+donotsaveindb = Nicht in Datenbank speichern
+hideinlist = In Liste verstecken
+useassearchfieldalidatenamenotempty = Als Suchfeld aufnehmen
+tablefielddeleted = Tabellenfeld wurde gelöscht
+tablefieldnotfound = Tabllenfeld wurde nicht gefunden
+addtablefield = Tabellenfeld anlegen
+table = Tabelle
+editfield = Feld editieren
+choosenadd = Felder auswählen
+choosenadd_description = Bitte wählen Sie das Feld aus, welches Sie bei Ihrer Verwaltung verwenden wollen. Dabei gibt es Value-Felder, mit denen normalerweise Eingaben getätigt werden, wie auch Validate-Felder, mit denen die Value-Felder nach diversen Kriterien überprüft werden können.
+addfield = Feld hinzufügen
+editfields = Felder bearbeiten
+
+
+xform_id_is_missing = ID fehlt
+xform_id_missing_info = Die Tabelle hat leider kein ID Feld mit autoincrement. Somit kann XFORM nicht damit arbeiten. Bitte aktualisieren Sie die Tabelle und legen notfalls die ID manuell an.
+
+# import
+xform_manager_import_error_missingfile = Bitte laden Sie eine Importdatei hoch
+xform_manager_import_error_missingfields = Es fehlen folgende Felder: {0}
+xform_manager_import_error_field = Feld "{0}" konnte nicht angelegt werden: "{1}"
+xform_manager_import_field_added = Feld "{0}" wurde angelegt
+xform_manager_import_error_import_stopped = Import wurde abgebrochen, da Fehler aufgetaucht sind.
+xform_manager_import_error_dataimport = Datensatz konnte nicht importiert werden: {0}
+xform_manager_import_error_dataimport = Es wurden {0} Datensätze importiert. Davon waren {1} neue Datensätze und {2} Datensätze wurden ersetzt.
+xform_manager_import_info_data_imported = Es wurde/n {0} Datensätze nicht importiert.
+xform_manager_import_error_not_started = Import wurde nicht gestartet.
+xform_manager_import_csv = CSV Datei importieren
+xform_manager_import_csv_info = Hiermit können Sie Daten in diese Tabelle importieren. BItte beachten Sie, dass Sie nur Textdateien importieren können und in der ersten Zeile die Felddefinitionen vorhanden sein müssen
+xform_manager_import_if_no_column = Wenn Spalte in der Datenbank nicht vorhanden ist,
+xform_manager_import_if_no_column_ignore = dann Spalte ignorieren.
+xform_manager_import_if_no_column_addtext = dann Spalte als TEXT in der Datenbank anlegen (Zur Verwaltung müssen später diese Felder noch bestimmt werden).
+xform_manager_import_if_no_column_break = dann Import abbrechen.
+xform_manager_import_divider = Trennzeichen
+xform_manager_import_divider_semicolon = Semikolon
+xform_manager_import_divider_comma = Komma
+xform_manager_import_divider_tab = Tabulator
+xform_manager_import_unique_field = Wenn dieses Feld identisch ist, dann wird der Datensatz ersetzt
+xform_manager_import_start = Hinzufügen

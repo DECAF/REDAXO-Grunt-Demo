@@ -1,0 +1,6 @@
+name: 'Navigation: Links'
+active: false
+attributes:
+    modules:
+        1: { all: '1' }
+    ctype: {  }

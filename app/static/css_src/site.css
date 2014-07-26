@@ -1,0 +1,1492 @@
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../sass/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../sass/vendor/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 41, ../sass/vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 53, ../sass/vendor/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 63, ../sass/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 74, ../sass/vendor/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 85, ../sass/vendor/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, ../sass/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 105, ../sass/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 114, ../sass/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 122, ../sass/vendor/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 131, ../sass/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 140, ../sass/vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 149, ../sass/vendor/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 158, ../sass/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 165, ../sass/vendor/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 169, ../sass/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 180, ../sass/vendor/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 188, ../sass/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 199, ../sass/vendor/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 207, ../sass/vendor/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 217, ../sass/vendor/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 228, ../sass/vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 252, ../sass/vendor/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 262, ../sass/vendor/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 274, ../sass/vendor/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 289, ../sass/vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 299, ../sass/vendor/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 308, ../sass/vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 318, ../sass/vendor/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 331, ../sass/vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 343, ../sass/vendor/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 353, ../sass/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, ../sass/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 375, ../sass/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 386, ../sass/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 395, ../sass/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 404, ../sass/vendor/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 415, ../sass/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 421, ../sass/vendor/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+                                                                    /**
+* A mixin to create retina sprites with hover & active states
+*
+* You have to register a pair of sprites using `{@link #retina-sprite-add}` and then you can use this mixin:
+* 
+*     @include retina-sprite-add(icons, "icons/*.png", "icons-retina/*.png");
+*
+*     .my-icon {
+*       @include retina-sprite(icon-name, icons);
+*     }
+* 
+* @param {String} $name
+* @param {String} [$sprite-name]
+* @param {Boolean} [$hover=false]
+* @param {Boolean} [$active=false]
+*/
+/**
+ * @param {String} $name
+ * @param {String} $path
+ * @param {String} $path2x
+ */
+/**
+ * Mixin for retina backgrounds where you can't use a sprite.
+ * 
+ * - Make sure you have a file@2x.png file additional to your file.png.
+ * - The mixin prepends $imgPath, which should be set globally at some point. Default is: "img/"
+ *
+ * Examples:
+ *     li {
+ *       @include retina-background(arrow, no-repeat 10px 15px)
+ *     }
+ *     
+ *     a.external {
+ *       @include retina-background(external, no-repeat right)
+ *     }
+ * 
+ * @param {String} $file Path to file relative to images folder defined in config.rb and without a file extension
+ * @param {Object} [$attr] Additional attributes like position or repetition. E.g. `no-repeat top right`
+ * @param {String} [$type] The file type.
+ */
+/*********************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+**********************************************************************************/
+/* ### undo #################################################################### */
+/* line 11, ../sass/vendor/redaxo/_main.scss */
+:link, :visited {
+  text-decoration: none;
+}
+
+/* line 12, ../sass/vendor/redaxo/_main.scss */
+ul, ol {
+  list-style: none;
+}
+
+/* line 13, ../sass/vendor/redaxo/_main.scss */
+h1, h2, h3, h4, h5, h6, pre, code {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* line 14, ../sass/vendor/redaxo/_main.scss */
+ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/vendor/redaxo/_main.scss */
+img, a img, :link img, :visited img, fieldset {
+  border: none;
+}
+
+/* line 16, ../sass/vendor/redaxo/_main.scss */
+img {
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
+
+/* line 17, ../sass/vendor/redaxo/_main.scss */
+address {
+  font-style: normal;
+}
+
+/* line 19, ../sass/vendor/redaxo/_main.scss */
+table {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+  font-size: 1em;
+}
+
+/* line 20, ../sass/vendor/redaxo/_main.scss */
+tr {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 21, ../sass/vendor/redaxo/_main.scss */
+td {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: top;
+  border-spacing: 0px;
+}
+
+/* line 24, ../sass/vendor/redaxo/_main.scss */
+legend {
+  display: none;
+}
+
+/* line 26, ../sass/vendor/redaxo/_main.scss */
+div, p, li, a {
+  background-repeat: no-repeat;
+}
+
+/* ### reset some basic style ################################################### */
+/* line 30, ../sass/vendor/redaxo/_main.scss */
+dl {
+  margin: 0 0 0 0;
+}
+
+/* line 31, ../sass/vendor/redaxo/_main.scss */
+dl dt {
+  margin: 0 0 0 0;
+}
+
+/* line 32, ../sass/vendor/redaxo/_main.scss */
+dl dd + dt {
+  margin-top: 0;
+}
+
+/* line 33, ../sass/vendor/redaxo/_main.scss */
+dl dd {
+  margin: 0 0 0 0;
+}
+
+/* line 35, ../sass/vendor/redaxo/_main.scss */
+ol {
+  list-style: none;
+}
+
+/* line 36, ../sass/vendor/redaxo/_main.scss */
+ol li {
+  margin: 0 0 0 0;
+}
+
+/* line 37, ../sass/vendor/redaxo/_main.scss */
+ol li ol {
+  margin: 0 0 0 0;
+}
+
+/* line 38, ../sass/vendor/redaxo/_main.scss */
+ol li ul {
+  margin: 0 0 0 0;
+}
+
+/* line 40, ../sass/vendor/redaxo/_main.scss */
+p {
+  margin-bottom: 0em;
+}
+
+/* line 42, ../sass/vendor/redaxo/_main.scss */
+ul {
+  list-style: none;
+}
+
+/* line 43, ../sass/vendor/redaxo/_main.scss */
+ul li {
+  margin: 0 0 0 0;
+}
+
+/* line 44, ../sass/vendor/redaxo/_main.scss */
+ul li ul {
+  margin: 0 0 0 0;
+  list-style: none;
+}
+
+/* line 45, ../sass/vendor/redaxo/_main.scss */
+ul li ol {
+  margin: 0 0 0 0;
+}
+
+/* line 47, ../sass/vendor/redaxo/_main.scss */
+pre {
+  font-size: 1.2em;
+}
+
+/* line 49, ../sass/vendor/redaxo/_main.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* ### HTML ###################################################################### */
+/* line 52, ../sass/vendor/redaxo/_main.scss */
+html {
+  min-height: 99%;
+  margin-bottom: 1px;
+}
+
+/* ### BODY ###################################################################### */
+/* line 58, ../sass/vendor/redaxo/_main.scss */
+body {
+  background: #37444F;
+  color: #fff;
+  font-family: "Lucida Grande", verdana, arial, helvetica, sans-serif;
+  font-size: x-small;
+}
+
+/* \*/
+/* line 65, ../sass/vendor/redaxo/_main.scss */
+* html body {
+  text-align: center;
+  font-size: xx-small;
+}
+
+/* */
+/* IE 5.5 Hack */
+/* line 67, ../sass/vendor/redaxo/_main.scss */
+.clearer {
+  display: block;
+  clear: both;
+  line-height: 0;
+  height: 1px;
+  font-size: 0;
+  visibility: hidden;
+}
+
+/* line 76, ../sass/vendor/redaxo/_main.scss */
+.clear {
+  clear: both;
+}
+
+/* line 80, ../sass/vendor/redaxo/_main.scss */
+.floatLeft {
+  float: left;
+}
+
+/* line 81, ../sass/vendor/redaxo/_main.scss */
+.floatRight {
+  float: right;
+}
+
+/* line 83, ../sass/vendor/redaxo/_main.scss */
+.warning {
+  color: #f00;
+  background: inherit;
+}
+
+/* ### Website Content ############################################################ */
+/* line 86, ../sass/vendor/redaxo/_main.scss */
+#site-content {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  width: 840px;
+}
+
+/* ### Header ##################################################################### */
+/* line 97, ../sass/vendor/redaxo/_main.scss */
+#header {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 140px;
+}
+
+/* ### Logo ####################################################################### */
+/* ### Teaser ##################################################################### */
+/* line 110, ../sass/vendor/redaxo/_main.scss */
+#main-teaser {
+  text-indent: -700em;
+  height: 220px;
+}
+
+/* ### Content #################################################################### */
+/* line 118, ../sass/vendor/redaxo/_main.scss */
+#content {
+  display: block;
+  clear: both;
+  position: relative;
+  padding: 0 0 0 0;
+}
+
+/* hide from IE/MAC \*/
+/* line 127, ../sass/vendor/redaxo/_main.scss */
+* html #content, * html #main-content {
+  height: 1px;
+}
+
+/* end hide */
+/* line 135, ../sass/vendor/redaxo/_main.scss */
+#main {
+  float: right;
+  width: 630px;
+}
+
+/* ### main-block => MainContent ################################################### */
+/* line 143, ../sass/vendor/redaxo/_main.scss */
+#main-block {
+  float: left;
+  width: 630px;
+  color: #fff;
+}
+
+/* line 150, ../sass/vendor/redaxo/_main.scss */
+#main-content-block {
+  padding: 20px;
+  display: block;
+}
+
+/* ### Footer ###################################################################### */
+/* line 158, ../sass/vendor/redaxo/_main.scss */
+#footer {
+  display: block;
+  width: 100%;
+}
+
+/* line 163, ../sass/vendor/redaxo/_main.scss */
+#footer p {
+  padding: 20px 0;
+  color: #c4c4c4;
+  background: inherit;
+}
+
+/* line 170, ../sass/vendor/redaxo/_main.scss */
+#footer p a,
+#footer p a:link {
+  color: #c4c4c4;
+  text-decoration: underline;
+  background: inherit;
+}
+
+/* line 176, ../sass/vendor/redaxo/_main.scss */
+#footer p a:hover {
+  color: #c4c4c4;
+  text-decoration: none;
+  background: inherit;
+}
+
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+/* ### Sub Navigation ######################################################### */
+/* line 12, ../sass/vendor/redaxo/_navigation.scss */
+#nav {
+  display: block;
+  float: left;
+  width: 208px;
+  background: url(../../files/bg_nav.gif) repeat-y;
+}
+
+/* line 20, ../sass/vendor/redaxo/_navigation.scss */
+#nav p.copy,
+#nav p {
+  padding-right: 20px;
+  color: #fff;
+  background: inherit;
+  text-align: right;
+}
+
+/* line 28, ../sass/vendor/redaxo/_navigation.scss */
+#nav p.copy a {
+  color: #fff;
+  background: inherit;
+  text-decoration: none;
+}
+
+/* line 34, ../sass/vendor/redaxo/_navigation.scss */
+#nav p.copy a:hover {
+  text-decoration: underline;
+}
+
+/* line 43, ../sass/vendor/redaxo/_navigation.scss */
+#nav {
+  min-height: 193px;
+}
+
+/* line 46, ../sass/vendor/redaxo/_navigation.scss */
+* html body #nav {
+  height: 193px;
+}
+
+/* IE 6 / 5.5 Hack */
+/* line 48, ../sass/vendor/redaxo/_navigation.scss */
+#nav ul.rex-navi1 {
+  padding: 10px 20px;
+}
+
+/* ### nav1st - first level navigation ######################################## */
+/* line 53, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi1 {
+  padding: 0px 20px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/* line 59, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi1 li {
+  display: block;
+  padding: 3px 0;
+  color: #37444f;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 67, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi1 a {
+  display: block;
+  color: #37444f;
+  padding: 1px 0;
+}
+
+/* line 75, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi1 a:hover,
+ul.rex-navi1 li a.rex-active,
+ul.rex-navi1 li a.rex-current {
+  color: #fff;
+  padding: 1px 0;
+}
+
+/* ### nav2nd - second level navigation ######################################### */
+/* line 84, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi2 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* line 91, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi2 li {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  border: none;
+  text-align: right;
+}
+
+/* line 102, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi2 a,
+ul.rex-navi2 a:hover,
+ul.rex-navi2 li a.rex-active,
+ul.rex-navi2 li a.rex-current {
+  display: block;
+  padding: 4px 17px 4px 10px;
+  background-image: url(../../files/button.gif);
+  background-position: 158px 8px;
+  background-repeat: no-repeat;
+}
+
+/* line 113, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi2 a:hover,
+ul.rex-navi2 li a.rex-active,
+ul.rex-navi2 li a.rex-current {
+  background-position: 158px -12px;
+  background-color: #c4d4dc;
+  color: #37444f;
+}
+
+/* line 120, ../sass/vendor/redaxo/_navigation.scss */
+ul.rex-navi2 li a.rex-active,
+ul.rex-navi2 li a.rex-current {
+  background-position: 158px -32px;
+}
+
+/* line 125, ../sass/vendor/redaxo/_navigation.scss */
+#breadcrumb {
+  margin-bottom: 20px;
+}
+
+/* line 130, ../sass/vendor/redaxo/_navigation.scss */
+#main-block #breadcrumb p,
+#main-block #breadcrumb ul,
+#main-block #breadcrumb li {
+  display: inline;
+  color: #90B0BF;
+  font-size: 1em;
+}
+
+/* line 135, ../sass/vendor/redaxo/_navigation.scss */
+#main-block ul.rex-breadcrumb li {
+  margin-left: 0px;
+  padding: 0 6px 0 13px;
+  background-image: url(../../files/raquo.gif);
+  background-position: 0px 4px;
+  background-repeat: no-repeat;
+  list-style: none;
+}
+
+/* line 143, ../sass/vendor/redaxo/_navigation.scss */
+#main-block ul.rex-breadcrumb li.rex-lvl1 {
+  margin: 0;
+  padding-left: 5px;
+  background: none;
+}
+
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+/* line 9, ../sass/vendor/redaxo/_content.scss */
+#site-content {
+  color: #fff;
+  text-align: left;
+  background: inherit;
+}
+
+/* ### breadcrump ############################################################ */
+/* line 17, ../sass/vendor/redaxo/_content.scss */
+#main-block p#breadcrumb {
+  font-size: 1em;
+  color: #90B0BF;
+  margin-bottom: 30px;
+}
+
+/* ### headlines ############################################################ */
+/* line 26, ../sass/vendor/redaxo/_content.scss */
+#main-block h1 {
+  color: #fff;
+  background: inherit;
+  font-size: 1.6em;
+  font-weight: normal;
+  line-height: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 36, ../sass/vendor/redaxo/_content.scss */
+#main-block h2 {
+  color: #90B0BF;
+  background: inherit;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+/* line 44, ../sass/vendor/redaxo/_content.scss */
+#main-block h3 {
+  color: #90B0BF;
+  background: inherit;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+
+/* line 52, ../sass/vendor/redaxo/_content.scss */
+#main-block h4 {
+  color: #c4c4c4;
+  background: inherit;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+/* line 60, ../sass/vendor/redaxo/_content.scss */
+#main-block h5 {
+  color: #c4c4c4;
+  background: inherit;
+  font-size: 1.0em;
+  font-weight: bold;
+  line-height: 1.0em;
+}
+
+/* line 68, ../sass/vendor/redaxo/_content.scss */
+#main-block h6 {
+  background: inherit;
+  color: #c4c4c4;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.0em;
+}
+
+/* ### Images ############################################################ */
+/* line 79, ../sass/vendor/redaxo/_content.scss */
+#main-block img {
+  display: block;
+  margin: 4px 0;
+}
+
+/* line 84, ../sass/vendor/redaxo/_content.scss */
+#main-block img.floatLeft {
+  float: left;
+  margin: 4px 10px 4px 0;
+}
+
+/* line 89, ../sass/vendor/redaxo/_content.scss */
+#main-block img.floatRight {
+  float: right;
+  margin: 4px 0 4px 10px;
+}
+
+/* ### Hyperlinks ######################################################### */
+/* line 99, ../sass/vendor/redaxo/_content.scss */
+#main-block a,
+#main-block a:link {
+  color: #90B0BF;
+  text-decoration: underline;
+}
+
+/* line 104, ../sass/vendor/redaxo/_content.scss */
+#main-block a:hover {
+  color: #90B0BF;
+  text-decoration: none;
+}
+
+/* line 110, ../sass/vendor/redaxo/_content.scss */
+#main-block a.faq,
+#main-block a.faq:link {
+  color: #eee;
+  font-size: 1.4em;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 2.0em;
+}
+
+/* line 118, ../sass/vendor/redaxo/_content.scss */
+#main-block a.faq:hover {
+  color: #90B0BF;
+  text-decoration: underline;
+}
+
+/* ### Paragraphs ########################################################## */
+/* line 126, ../sass/vendor/redaxo/_content.scss */
+#main-block p {
+  margin-bottom: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* line 132, ../sass/vendor/redaxo/_content.scss */
+#nav p {
+  margin-bottom: 1.2em;
+}
+
+/* ### Tables ############################################################## */
+/* line 140, ../sass/vendor/redaxo/_content.scss */
+#main-block table {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* line 145, ../sass/vendor/redaxo/_content.scss */
+#main-block td {
+  padding: 0 0 0 0;
+}
+
+/* ### Blockquotes ########################################################## */
+/* line 152, ../sass/vendor/redaxo/_content.scss */
+#main-block blockquote {
+  margin: 0 0 0 20px;
+}
+
+/* ### Lists ################################################################ */
+/* line 160, ../sass/vendor/redaxo/_content.scss */
+#main-block ul,
+#main-block ol {
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* line 166, ../sass/vendor/redaxo/_content.scss */
+#main-block ol li {
+  margin: 0 0 0 30px;
+  list-style-type: decimal-leading-zero;
+}
+
+/* line 170, ../sass/vendor/redaxo/_content.scss */
+#main-block ul li {
+  margin: 0 0 0 20px;
+  list-style-type: square;
+}
+
+/* ### Module ################################################################ */
+/* line 178, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.floatLeft img {
+  float: left;
+  margin: 4px 40px 4px 0;
+}
+
+/* line 183, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.floatRight img {
+  float: right;
+  margin: 4px 0 4px 40px;
+}
+
+/*
+#main-content-block a.more {
+	clear:left;
+	position: relative;
+	left: 120px;
+}
+*/
+/* ### Team ### */
+/* line 197, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.txt-img {
+  clear: both;
+  padding: 12px 0;
+}
+
+/* ### Team ### */
+/* line 205, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.team {
+  clear: both;
+  padding: 12px 0;
+  margin-bottom: 0px;
+}
+
+/* line 211, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.team div {
+  width: 100px;
+}
+
+/* line 215, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.team p {
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+  margin-top: 0px;
+}
+
+/* line 221, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.team div.floatLeft img {
+  margin: 4px 0px 4px 0;
+}
+
+/* ### Bildgalerie ### */
+/* line 227, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.galerie {
+  clear: both;
+}
+
+/* line 230, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.galerie div.image {
+  float: left;
+  width: 270px;
+}
+
+/* line 235, ../sass/vendor/redaxo/_content.scss */
+#main-content-block div.galerie div.image img {
+  padding: 5px;
+  border: 1px solid #aaa;
+}
+
+/* ### Formular ################################################################ */
+/* line 243, ../sass/vendor/redaxo/_content.scss */
+label.text {
+  width: 80px;
+  height: 25px;
+  display: block;
+  float: left;
+  clear: left;
+  padding-top: 5px;
+}
+
+/* line 252, ../sass/vendor/redaxo/_content.scss */
+label.textarea {
+  width: 80px;
+  height: 25px;
+  display: block;
+  clear: left;
+  padding-top: 5px;
+}
+
+/* line 259, ../sass/vendor/redaxo/_content.scss */
+input.text {
+  float: left;
+  width: 370px;
+  height: 20px;
+  background-color: #eee;
+  color: #000;
+  border-left: 6px solid #90b0bf;
+  border-bottom: 1px solid #FFF;
+  border-right: 6px solid #90b0bf;
+  border-top: 1px solid #FFF;
+}
+
+/* line 271, ../sass/vendor/redaxo/_content.scss */
+textarea.textarea {
+  width: 450px;
+  height: 100px;
+  background-color: #eee;
+  color: #000;
+  border-left: 6px solid #90b0bf;
+  border-bottom: 1px solid #FFF;
+  border-right: 6px solid #90b0bf;
+  border-top: 1px solid #FFF;
+}
+
+/* line 282, ../sass/vendor/redaxo/_content.scss */
+.submit {
+  background-color: #90b0bf;
+  color: #fff;
+  margin-top: 10px;
+  border: none;
+}
+
+/*******************************************************************************
+
+	Project		:	Redaxo Demo
+	Copyright	:	Design - hundertmorgen - www.hundertmorgen.de
+
+*******************************************************************************/
+/* ### Logo ################################################################# */
+/* line 9, ../sass/vendor/redaxo/_default.scss */
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #37444f;
+  background-image: url(../../files/redaxo_logo_klein.gif);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* line 19, ../sass/vendor/redaxo/_default.scss */
+#logo a {
+  display: block;
+  height: 80px;
+  width: 186px;
+  text-indent: -700em;
+}
+
+/* ### Header ############################################################### */
+/* line 28, ../sass/vendor/redaxo/_default.scss */
+#header {
+  background: #37444f url(../../files/bg_header.gif) 210px 0 no-repeat;
+  color: #c4c4c4;
+}
+
+/* line 33, ../sass/vendor/redaxo/_default.scss */
+#nav-header {
+  position: absolute;
+  left: 210px;
+  bottom: 18px;
+}
+
+/* ### Teaser ############################################################### */
+/* line 41, ../sass/vendor/redaxo/_default.scss */
+#main-teaser {
+  background: url(../../files/main_teaser.jpg) no-repeat;
+}
+
+/* ### Main-block Background ################################################# */
+/* line 47, ../sass/vendor/redaxo/_default.scss */
+#main-block {
+  background-image: url(../../files/linie_main_block.gif);
+  background-position: 627px 0;
+  background-repeat: repeat-y;
+  background-color: #465762;
+  padding-bottom: 40px;
+}
+
+/* ### Donate ###################################################################### */
+/* line 57, ../sass/vendor/redaxo/_default.scss */
+#donate {
+  display: block;
+  clear: left;
+  width: 208px;
+  height: 300px;
+  background: #37444f url(../../files/bg_unav.gif) no-repeat;
+  color: #c4c4c4;
+  text-align: right;
+}
+
+/* line 67, ../sass/vendor/redaxo/_default.scss */
+#donate input {
+  margin-top: 200px;
+  margin-right: 20px;
+}
+
+/*
+	media queries mixin
+	usage:
+
+	.foo {
+	  float: left;
+	  width: 250px;
+	  @include media($PHONE-ONLY) { width: 100% ;}
+	  @include media($TABLET) { width: 125px; }
+	  @include media($DESKTOP) { float: none; }
+	}
+*/
+/* line 1, ../sass/partials/_debug.scss */
+body.DEBUG::after {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 2000;
+}
+@media (max-width: 639px) {
+  /* line 1, ../sass/partials/_debug.scss */
+  body.DEBUG::after {
+    content: 'phone';
+  }
+}
+@media (min-width: 640px) {
+  /* line 1, ../sass/partials/_debug.scss */
+  body.DEBUG::after {
+    content: 'tablet';
+  }
+}
+@media (min-width: 1020px) {
+  /* line 1, ../sass/partials/_debug.scss */
+  body.DEBUG::after {
+    content: 'desktop';
+  }
+}
+
+/* line 4, ../sass/partials/_sprite.scss */
+.an-asset, .assets-arrow-right, .assets-arrow-left, .animated-ajax-loader, .btn-close {
+  display: inline-block;
+}
+
+/* line 8, ../sass/partials/_sprite.scss */
+.assets-logo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 45px;
+  width: 180px;
+  background-image: url('../img/sprites/assets-safc8091566.png');
+  background-position: 0 -408px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 8, ../sass/partials/_sprite.scss */
+  .assets-logo {
+    background-image: url('../img/sprites/assets2x-s659e7ef67b.png');
+    background-position: 0 -404px;
+    -webkit-background-size: 180px auto;
+    -moz-background-size: 180px auto;
+    -o-background-size: 180px auto;
+    background-size: 180px auto;
+  }
+}
+
+/* line 12, ../sass/partials/_sprite.scss */
+.assets-arrow-right {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 100px;
+  width: 40px;
+  background-image: url('../img/sprites/assets-safc8091566.png');
+  background-position: 0 -204px;
+  background-repeat: no-repeat;
+}
+/* line 93, ../sass/vendor/retina/_retina-sprite.scss */
+.assets-arrow-right:hover {
+  background-position: 0 -102px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 12, ../sass/partials/_sprite.scss */
+  .assets-arrow-right {
+    background-image: url('../img/sprites/assets2x-s659e7ef67b.png');
+    background-position: 0 -303px;
+    -webkit-background-size: 180px auto;
+    -moz-background-size: 180px auto;
+    -o-background-size: 180px auto;
+    background-size: 180px auto;
+  }
+  /* line 119, ../sass/vendor/retina/_retina-sprite.scss */
+  .assets-arrow-right:hover {
+    background-position: 0 0;
+  }
+}
+
+/* line 17, ../sass/partials/_sprite.scss */
+.assets-arrow-left {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 100px;
+  width: 40px;
+  background-image: url('../img/sprites/assets-safc8091566.png');
+  background-position: 0 -306px;
+  background-repeat: no-repeat;
+}
+/* line 93, ../sass/vendor/retina/_retina-sprite.scss */
+.assets-arrow-left:hover {
+  background-position: 0 0;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 17, ../sass/partials/_sprite.scss */
+  .assets-arrow-left {
+    background-image: url('../img/sprites/assets2x-s659e7ef67b.png');
+    background-position: 0 -202px;
+    -webkit-background-size: 180px auto;
+    -moz-background-size: 180px auto;
+    -o-background-size: 180px auto;
+    background-size: 180px auto;
+  }
+  /* line 119, ../sass/vendor/retina/_retina-sprite.scss */
+  .assets-arrow-left:hover {
+    background-position: 0 -101px;
+  }
+}
+
+/* line 22, ../sass/partials/_sprite.scss */
+.animated-ajax-loader {
+  background: transparent url(/images/animated/ajax-loader.gif) no-repeat center;
+  height: 16px;
+  width: 16px;
+}
+
+/* line 29, ../sass/partials/_sprite.scss */
+.btn-close {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 22px;
+  width: 22px;
+  background-image: url('../img/sprites/assets-safc8091566.png');
+  background-position: 0 -455px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 29, ../sass/partials/_sprite.scss */
+  .btn-close {
+    background-image: url('../img/sprites/assets2x-s659e7ef67b.png');
+    background-position: 0 -450px;
+    -webkit-background-size: 180px auto;
+    -moz-background-size: 180px auto;
+    -o-background-size: 180px auto;
+    background-size: 180px auto;
+  }
+}

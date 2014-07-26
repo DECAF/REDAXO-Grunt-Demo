@@ -1,0 +1,13 @@
+{
+  "head": [
+    "app/static/js/src/vendor/modernizr.custom.js"
+  ],
+  "body": [
+    "app/static/js/src/vendor/jquery-1.10.2.min.js",
+    "app/static/js/src/vendor/gremlin.min.js",
+    "app/static/js/src/vendor/gremlin.interests.min.js",
+    "app/static/js/src/vendor/gremlin.jquery.min.js",
+    "app/static/js/src/general.js",
+    "app/static/js/coffee/gremlins/**/*.js"
+  ]
+}
