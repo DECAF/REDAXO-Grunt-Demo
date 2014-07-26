@@ -6,6 +6,9 @@
 *.lock
 *.js.map
 
+# node modules
+node_modules/
+
 # redaxo files, but not addon subfolders
 #app/files/*.*
 
