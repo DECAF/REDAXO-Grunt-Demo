@@ -1,0 +1,19 @@
+# diverse
+.idea
+.sass-cache
+.tmp
+.svn
+*.lock
+*.js.map
+
+# redaxo files, but not addon subfolders
+#app/files/*.*
+
+# redaxo cache folders
+app/redaxo/include/generated/*
+
+# debug file
+app/_DEBUG
+
+# dist
+dist/
