@@ -35,8 +35,6 @@ if($this->getValue("art_keywords") != "")
 <?php
 require_once($REX['FRONTEND_PATH'].'/static/php/dcf.html.class.php');
 DCF_HTML::setPathPrefix('../');
-DCF_HTML::setLiveReload( TRUE );
-DCF_HTML::setCssFiles(array( 'site.css' ));
 echo DCF_HTML::composeHead();
 ?>
 </head>

@@ -1,29 +1,53 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 8]>     <html class="no-js lt-ie8" lang="en"><![endif]-->
-<!--[if IE 9]>        <html class="no-js    ie9" lang="en"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js"        lang="en"><!--<![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 <head>
-    <meta charset="utf-8">
-
-    <title>Bootstrap REDAXO-Grunt.</title>
-
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="robots" content="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>REDAXO-Grunt-Demo | Home</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
 
 <?php
 require_once(dirname(__FILE__).'/../../static/php/dcf.html.class.php');
 DCF_HTML::setPathPrefix('../');
 DCF_HTML::setLiveReload( TRUE );
-// DCF_HTML::setCssFiles(array( 'site1.css', 'site2.css'));
 echo DCF_HTML::composeHead();
 ?>
 
-    <!--[if lt IE 9]>
-    <script src="static/js/src/vendor/html5shiv.js"></script>
-    <script src="static/js/src/vendor/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
+<body class="mainPage <?php if (DCF_HTML::isDebug()) echo 'DEBUG' ?>">
+
+	<div>
+		<a name="top" id="top"></a>
+	</div>
+
+	<div id="site-content">
+		<div id="column">
+
+			<div id="header">
+				<div id="logo">
+					<a href="./index.php" title="Zur&uuml;ck zur Startseite">REDAXO Demo</a>
+				</div>
+			</div>
+
+			<div id="content">
+
+				<div id="main-content">
+
+					<div id="nav">
+
+<?php include('_include/navi.inc.php'); ?>
+
+						<p class="copy">&copy; by <a href="http://www.redaxo.org">REDAXO</a></p>
+					</div>
+
+					<div id="main">
+						<div id="main-block">
+							<div id="main-teaser">
+								Slogan: Einfach, flexibel, sinnvoll
+							</div>
+
+							<div id="main-content-block">
+
+<?php include('_include/breadcrumb.inc.php'); ?>
+
