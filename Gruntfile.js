@@ -7,6 +7,8 @@ module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
+
 		watch: {
 			options: {
 				livereload: true
@@ -34,11 +36,14 @@ module.exports = function (grunt) {
 				files: ['app/dev/**/*', 'app/pages/**/*']
 			}
 		},
+
+
 		clean: {
 			coffee: ['app/static/js/coffee/**/*.js', 'app/static/js/coffee/**/*.map'],
-			htmlTmp : ['app/.tmp/'],
-			releaseTmp : ['.tmp/']
+			tmp: ['.tmp', 'app/.tmp/']
 		},
+
+
 		coffee: {
 			dist: {
 				options: {
@@ -52,6 +57,8 @@ module.exports = function (grunt) {
 				ext: '.js'
 			}
 		},
+
+
 		compass: {
 			options: {
 				sassDir: 'app/static/sass',
@@ -85,6 +92,8 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
+
 		uglify: {
 			options: {
 				compress: false,
@@ -98,6 +107,8 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
+
 		bytesize: {
 			all: {
 				src: [
@@ -107,6 +118,8 @@ module.exports = function (grunt) {
 				]
 			}
 		},
+
+
 		appSources: {
 			dist: {
 				options: {
@@ -118,11 +131,11 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+
+
 		php2html: {
 			default: {
 				options: {
-					// relative links should be renamed from .php to .html
-					//processLinks: false
 					htmlhint: {
 						'tagname-lowercase': false,
 						'attr-lowercase': false,
@@ -135,10 +148,18 @@ module.exports = function (grunt) {
 					}
 				},
 				files: [
-					{expand: true, cwd: 'app/dev/', src: ['*.php'], dest: 'app/.tmp/', ext: '.html' }
+					{
+						expand: true,
+						cwd: 'app/dev/',
+						src: ['*.php'],
+						dest: 'app/.tmp/',
+						ext: '.html'
+					}
 				]
 			}
 		},
+
+
 		rename: {
 			options: {
 				ignore: true
@@ -147,14 +168,13 @@ module.exports = function (grunt) {
 				src: 'app/NO_DEBUG',
 				dest: 'app/_DEBUG'
 			},
-
-			// Any number of targets here...
-
 			disableDebug: {
 				src: 'app/_DEBUG',
 				dest: 'app/NO_DEBUG'
 			}
 		},
+
+
 		compress: {
 			dist: {
 				options: {
@@ -175,6 +195,8 @@ module.exports = function (grunt) {
 				]
 			}
 		},
+
+
 		revision: {
 			options: {
 				property: 'meta.revision',
@@ -182,21 +204,60 @@ module.exports = function (grunt) {
 				short: true
 			}
 		},
+
+
 		copy: {
 			dist: {
 				files: [
-					// includes files within path
-					{expand: true, src: ['app/.tmp/**'], dest: '.tmp/app/html', filter: 'isFile', flatten: true},
-					{src: ['app/static/components/**', '!app/static/components/_DO_NOT_MODIFY'], dest: '.tmp/', filter: 'isFile'}, // includes files in path
-					{src: ['app/static/css/**.css'], dest: '.tmp/', filter: 'isFile'}, // includes files in path
-					{cwd: 'app/static/fonts/', src: ['**', '!icomoon_src/**','!**.md'], dest: '.tmp/app/static/fonts/', filter: 'isFile', expand: true}, // includes files in path
-					{src: ['app/static/img/**'], dest: '.tmp/', filter: 'isFile'}, // includes files in path
-					{src: ['app/static/js/**.js', 'app/static/js/**.jon'], dest: '.tmp/', filter: 'isFile'}, // includes files in path
-					{src: ['app/static/media/**'], dest: '.tmp/', filter: 'isFile'}, // includes files in path
+					{
+						expand: true,
+						src: ['app/.tmp/**'],
+						dest: '.tmp/app/html',
+						filter: 'isFile',
+						flatten: true
+					},
+					{
+						src: ['app/static/components/**', '!app/static/components/_DO_NOT_MODIFY'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					},
+					{
+						src: ['app/static/css/**.css'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					},
+					{
+						cwd: 'app/static/fonts/',
+						src: ['**', '!icomoon_src/**','!**.md'],
+						dest: '.tmp/app/static/fonts/',
+						filter: 'isFile',
+						expand: true
+					},
+					{
+						src: ['app/static/img/**'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					},
+					{
+						src: ['app/static/js/**.js', 'app/static/js/**.json'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					},
+					{
+						src: ['app/static/media/**'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					},
+					{
+						src: ['app/files/**'],
+						dest: '.tmp/',
+						filter: 'isFile'
+					}
 				]
 			}
 		}
 	});
+
 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -209,6 +270,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-compress');
 	grunt.loadNpmTasks('grunt-git-revision');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+
 
 	grunt.registerMultiTask('appSources', 'Creates the json file for the app sources.', function () {
 		var replacePattern = this.options().replacePattern;
@@ -225,13 +287,41 @@ module.exports = function (grunt) {
 		});
 	});
 
-	grunt.registerTask('dev', ['clean', 'coffee', 'compass:clean', 'compass:init', 'appSources', 'watch']);
-	grunt.registerTask('build', ['clean', 'coffee', 'compass:clean', 'compass:dist', 'uglify', 'appSources', 'bytesize']);
-	grunt.registerTask('generateHtml', ['rename:disableDebug','php2html', 'rename:enableDebug']);
 
-	grunt.registerTask('zip', ['generateHtml', 'copy:dist','revision','compress:dist', 'clean:releaseTmp', 'clean:htmlTmp']);
-
-	grunt.registerTask('dist', ['build', 'zip']);
-
-	grunt.registerTask('default', ['dev']);
+	grunt.registerTask('dev', [
+		'clean',
+		'coffee',
+		'compass:clean',
+		'compass:init',
+		'appSources',
+		'watch'
+	]);
+	grunt.registerTask('build', [
+		'clean',
+		'coffee',
+		'compass:clean',
+		'compass:dist',
+		'uglify',
+		'appSources',
+		'bytesize'
+	]);
+	grunt.registerTask('generateHtml', [
+		'rename:disableDebug',
+		'php2html',
+		'rename:enableDebug'
+	]);
+	grunt.registerTask('zip', [
+		'generateHtml',
+		'copy:dist',
+		'revision',
+		'compress:dist',
+		'clean:tmp'
+	]);
+	grunt.registerTask('dist', [
+		'build',
+		'zip'
+	]);
+	grunt.registerTask('default', [
+		'dev'
+	]);
 };
