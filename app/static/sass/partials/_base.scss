@@ -1,6 +1,13 @@
 html {
 }
 body {
+
+	@include media($PHONE-ONLY) {
+		background: #fff;
+	}
 }
 
 
+a {
+	color: $link-color;
+}
