@@ -11,15 +11,16 @@ __Beispiel einer [REDAXO](http://www.redaxo.org)-Installation innerhalb eines Gr
 
 ## Setup
 
-1. REDAXO einrichten:
+1. Localhost auf `app/` einrichten.
+2. REDAXO einrichten:
    * Datenbank lokal einrichten (`_db/redaxo_grunt_demo.sql`) und ggfls `master.inc.php` anpassen.
    * User/Pass: `demo` / `demo`
-2. Grunt und alle nötigen Komponenten installieren wie in `README setup.md` beschrieben:
+3. Grunt und alle nötigen Komponenten installieren wie in `README setup.md` beschrieben:
    * Node + npm
    * Grunt und CoffeeScript
    * Ruby, Bundler, Sass und Compass
    * PHP
-3. Grunt mit dem Frontend-Prototypen und mit REDAXO verwenden wie in `README workflow.md` beschrieben:
+4. Grunt mit dem Frontend-Prototypen und mit REDAXO verwenden wie in `README workflow.md` beschrieben:
    * `grunt`
    * `grund build`
    * `grunt dist`
