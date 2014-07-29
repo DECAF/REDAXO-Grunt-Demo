@@ -17,7 +17,7 @@ app/redaxo/include/generated/*
 !app/redaxo/include/generated/.gitkeep
 
 # debug file
-app/_DEBUG
+#app/_DEBUG
 
 # dist files
 dist/*.*
