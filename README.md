@@ -10,7 +10,12 @@ __Beispiel einer [REDAXO](http://www.redaxo.org)-Installation innerhalb eines Gr
 * Am Prototyp findet die Frontend-Entwicklung statt, die Implementierung für REDAXO kann unabhängig erfolgen.
 * Beide können sowohl im Develop-Modus arbeiten (einzelne, unminifizierte Sourcen) als auch im Production-Modus (konkatinierte und minifizierte Sourcen). Der Wechsel zwischen den Modi findet außerhalb von REDAXO statt, und es sind dafür auch keine Eingriffe in Templates oder Module notwendig.
 
-## Setup
+
+> Listen. Since I've met you I've nearly been incinerated, drowned, shot at, and chopped into fish bait.  
+_– Indiana Jones in Indiana Jones 3_
+
+
+##  Setup
 
 1. Localhost auf `app/` einrichten.
 2. REDAXO einrichten:
@@ -26,6 +31,11 @@ __Beispiel einer [REDAXO](http://www.redaxo.org)-Installation innerhalb eines Gr
    * `grund build`
    * `grunt dist`
 
+
 ## Fragen, Feedback, Kaffee
 
-[@_DECAF](http://twitter.com/_DECAF)
+> Our situation has not improved.  
+_– Professor Henry Jones in Indiana Jones 3_
+
+
+[@_DECAF](http://twitter.com/_DECAF)  
