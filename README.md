@@ -21,12 +21,12 @@ _– Indiana Jones in Indiana Jones 3_
 2. REDAXO einrichten:
    * Datenbank lokal einrichten (`_db/redaxo_grunt_demo.sql`) und ggfls `master.inc.php` anpassen.
    * User/Pass: `demo` / `demo`
-3. Grunt und alle nötigen Komponenten installieren wie in `README setup.md` beschrieben:
+3. Grunt und alle nötigen Komponenten installieren wie in [README setup.md](https://github.com/DECAF/REDAXO-Grunt-Demo/blob/master/README%20setup.md) beschrieben:
    * Node + npm
    * Grunt und CoffeeScript
    * Ruby, Bundler, Sass und Compass
    * PHP
-4. Grunt mit dem Frontend-Prototypen und mit REDAXO verwenden wie in `README workflow.md` beschrieben:
+4. Grunt mit dem Frontend-Prototypen und mit REDAXO verwenden wie in [README workflow.md](https://github.com/DECAF/REDAXO-Grunt-Demo/blob/master/README%20workflow.md) beschrieben:
    * `grunt`
    * `grund build`
    * `grunt dist`
