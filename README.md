@@ -17,6 +17,8 @@ _– Indiana Jones in Indiana Jones 3_
 
 ##  Setup
 
+_Hinweis: Dieses Setup erfordert ein älteres Sass 3.2 und Compass 0.x, es ist nicht auf die aktuellen Versionen angepasst._
+
 1. Localhost auf `app/` einrichten.
 2. REDAXO einrichten:
    * Datenbank lokal einrichten (`_db/redaxo_grunt_demo.sql`) und ggfls `master.inc.php` anpassen.
